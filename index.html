@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Jonathan Lian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+    <link href="resume.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script src="resume.js"></script>
+</head>
+
+<body ng-app="Resume" ng-cloak>
+    <resume>
+        <resume-heading first-name="Jonathan"
+                        last-name="Lian"
+                        github="Lianathanoj"
+                        website="jonlian.com"
+                        email="jlian@gatech.edu"
+                        phone="(678) 910-7883"
+                        linkedin="jonlian">
+        </resume-heading>
+        <br>
+        <resume-body>
+            <resume-column flex="40">
+                <category name="Education">
+                    <category-item title="Georgia Institute of Technology">
+                        <li>B.S. Computer Science</li>
+                        <li>Graduation: December 2018</li>
+                        <li>GPA: 3.72</li>
+                    </category-item>
+                </category>
+            </resume-column>
+            <resume-column flex="60">
+                <category name="Skills">
+                    <ul class="category-bullets-indented">
+                        <li><b>Languages:</b> Java, JavaScript, TypeScript, Python, C</li>
+                        <li><b>Tools/Frameworks/Technologies:</b> Angular, React.js,<br>Node.js, HTML/CSS, jQuery, Git, Github, Tableau,<br>Cloud Foundry, Amazon Web Services, Drupal</li>
+                        <li><b>Databases:</b> MySQL, PostgreSQL, DB2</li>
+                    </ul>
+                </category>
+            </resume-column>
+        </resume-body>
+        <resume-body>
+            <resume-column flex="100">
+                <category name="Experience">
+                    <category-item title="Software Engineering Intern | The Home Depot" subtitle="Summer 2017">
+                        <li>Created an application to detect allocation anomalies for inventory replenishment systems</li>
+                        <li>Handles multiple issue prioritization for thousands of anomalies from daily batch processes</li>
+                        <li>Displays historical trends with behavioral diagnostics and issue resolution functionality</li>
+                        <li>Implemented using predominantly Angular, SQL, Spring Boot & Java, and Pivotal Cloud Foundry</li>
+                    </category-item>
+                </category>
+                <category name="Projects">
+                    <category-item-href title="Magic Mirror | Github" href="https://github.com/lealex262/MagicMirror" subtitle="Summer 2017">
+                        <li>Created a Raspberry Pi-powered smart mirror which recognizes a hand gesture to take an image, relays
+                            that picture to an image-hosting service, and sends an image link to a phone via SMS</li>
+                        <li>Utilized Python, OpenCV for recognition, Imgur API for image hosting, Twilio API for messaging, and Tkinter for
+                            the interface alongside multiprocessing and scheduling modules</li>
+                            <!--multiprocessing modules for concurrent video and GUI usage, and scheduling modules for local and Imgur-based image storage</li>-->
+                    </category-item-href>
+                    <!--<category-item title="East Cobb Sports Website | Github" subtitle="Summer 2017">-->
+                        <!--<li>Developed a proof of concept for a local business with major updates to the current website's UI and UX</li>-->
+                        <!--<li>Created mobile and desktop friendly versions of the website using React.js and Material UI</li>-->
+                    <!--</category-item>-->
+                    <category-item-href title="SoundCloud Song Sorter | Github" href="https://soundcloud-sorter.surge.sh" subtitle="Summer 2017">
+                        <li>Organizes a specific artist's songs by most favorites or playbacks using SoundCloud's JavaScript API to help listeners find
+                            music they're more likely to enjoy because SoundCloud currently does not support this feature</li>
+                        <li>Contains UI/UX updates from a previous version with code refactored from jQuery to React.js</li>
+                    </category-item-href>
+                    <category-item title="Excel | Epic Intentions" subtitle="Spring 2017">
+                        <li>Developed an app for a nonprofit named Excel with programs for students with intellectual disabilities</li>
+                        <li>Supports automated mentor-mentee matching, content management capabilities, and database hosting which
+                        replaced the previous method of using Excel sheets with manual data entry</li>
+                        <li>Constructed database schemas, backend endpoints, and migrations with PostgreSQL, Node.js, and Sequelize ORM
+                        and created UI components using Handlebars, HTML, and Materialize CSS</li>
+                    </category-item>
+                </category>
+                <category name="Leadership">
+                    <category-item title="Intelligent Transportation Systems | Research" subtitle="Team Lead (August 2016 - Present)">
+                        <li>Currently migrating new database information and developing a dashboard for bus managers to determine relevant bus bunching statistics through graphical and tabular visualizations</li>
+                        <li>Led a sub-team by holding regular team meetings, software learning sessions, and client demos</li>
+                    </category-item>
+                    <category-item title="Epic Intentions" subtitle="Project Lead (Spring 2017 - Present)">
+                        <li>An organization aiding non-profits by allowing students to undertake projects on their behalf</li>
+                        <li>Currently leading a seven person team to create data and map visualizations for Atlanta Speech School</li>
+                    </category-item>
+                    <category-item title="Georgia Tech Table Tennis Association" subtitle="Vice President, Webmaster, & Safety Officer (Fall 2015 - Present)">
+                        <li>Recruited players from student orientations, organized weekly club practices, attended budget meetings,
+                            and managed the club website while leading our B Team in regional NCTTA tournaments</li>
+                        <li>Created scripts using Python and Google Sheets API to automate rating input and roster changes</li>
+                    </category-item>
+                </category>
+                <category name="Awards">
+                    <ul class="category-bullets-indented">
+                        <li>1st Place Overall, CS^2 Hackathon 2016</li>
+                        <li>2nd Place in Best Use of Aladdin API, HackGT 2016</li>
+                        <li>Player of the Year, Georgia Tech Table Tennis Association 2017</li>
+                    </ul>
+                </category>
+                <br>
+            </resume-column>
+        </resume-body>
+    </resume>
+</body>
+
+</html>
