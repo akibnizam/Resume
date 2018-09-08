@@ -40,8 +40,8 @@
             <resume-column flex="60">
                 <category name="Skills">
                     <ul class="category-bullets-indented">
-                        <li><b>Languages:</b>  C, C++, Java, Python, JavaScript, HTML, SQL</li>
-                        <li><b>Tools/Frameworks/Technologies:</b> AngularJS, Node.js, <br>HTML/CSS, jQuery, Git, Github, <br>Firebase, Amazon Web Services</li>
+                        <li><b>Languages:</b>  C, C++, Java, Python, JavaScript, HTML, Assembly</li>
+                        <li><b>Tools/Frameworks/Technologies:</b> Clang, AngularJS, Node.js, <br>HTML/CSS, jQuery, Git, Github, <br>Firebase, Amazon Web Services</li>
                         <li><b>Databases:</b> MySQL, MongoDB</li>
                     </ul>
                 </category>
@@ -50,58 +50,81 @@
         <resume-body>
             <resume-column flex="100">
                 <category name="Experience">
-                    <category-item title="Software Engineering Intern | QbitLogic" subtitle="Summer 2017">
-                        <li>Created an application to detect allocation anomalies for inventory replenishment systems</li>
-                        <li>Handles multiple issue prioritization for thousands of anomalies from daily batch processes</li>
-                        <li>Displays historical trends with behavioral diagnostics and issue resolution functionality</li>
-                        <li>Implemented using predominantly Angular, SQL, Spring Boot & Java, and Pivotal Cloud Foundry</li>
+                    <category-item title="Software Engineering Internship | QbitLogic" subtitle="Summer 2018">
+                        <li>
+                            Built a <b>stack-based buffer-overflow checker</b> using <b>symbolic execution</b> and <b>binary analysis techniques</b><br/>
+                            <b>Tools Used</b> - Python, C++
+                        </li>
+                        <li>
+                            The checker found buffer overflow vulnerabilities in open source projects, including “Heart-bleed” vulnerability in previous versions of Openssl
+                        </li>
+                        <li>
+                            Benchmarked static analyzers against Clang error reports on open source projects
+                        </li>
+                    </category-item>
+                    <category-item title="Software Engineering Internship | Aware Home Research Initiative - Georgia Tech Lab" subtitle="Summer 2017">
+                        <li>
+                            Built a data management web application that collects data from smart home appliances in real time to assist other machine learning applications<br/>
+                            <b>Tools Used</b> - JavaScript, HTML, NodeJS, NoSQL
+                        </li>
+                        <li>
+                            Developed a smart watch application for senior citizens that notifies on safety hazards, such as the stove left unattended for a long time<br/>
+                            <b>Tools Used</b> - JavaScript, CSS, HTML, MQTT, Tizen
+                        </li>
                     </category-item>
                 </category>
                 <category name="Projects">
-                    <category-item-href title="ANGR | Github" href="https://github.com/lealex262/MagicMirror" subtitle="Summer 2017">
-                        <li>Created a Raspberry Pi-powered smart mirror which recognizes a hand gesture to take an image, relays
-                            that picture to an image-hosting service, and sends an image link to a phone via SMS</li>
-                        <li>Utilized Python, OpenCV for recognition, Imgur API for image hosting, Twilio API for messaging, and Tkinter for
-                            the interface alongside multiprocessing and scheduling modules</li>
+                    <category-item-href title="ANGR | Contributor" href="https://github.com/angr/angr" subtitle="Summer 2018">
+                        <li>
+                            Angr is an <b>open-source</b> powerful and user-friendly binary analysis platform with over <b>3000 active users</b>
+                        </li>
+                        <li>
+                            Increased speed and efficiency of the search algorithm that is used in symbolic execution <br/>
+                            <b>Tools Used</b> - Python
+                        </li>
+                        <li>
+                            Fixed path explosion problem, which is a <b>common and important</b> problem with symbolic execution technique<br/>
+                            <b>Tools Used</b> - Python
+                        </li>
+                        <li>
+                            Added to documentation new knowledge that was obtained from using and improving Angr
+                        </li>
                             <!--multiprocessing modules for concurrent video and GUI usage, and scheduling modules for local and Imgur-based image storage</li>-->
                     </category-item-href>
                     <!--<category-item title="East Cobb Sports Website | Github" subtitle="Summer 2017">-->
                         <!--<li>Developed a proof of concept for a local business with major updates to the current website's UI and UX</li>-->
                         <!--<li>Created mobile and desktop friendly versions of the website using React.js and Material UI</li>-->
                     <!--</category-item>-->
-                    <category-item-href title="SoundCloud Song Sorter | Github" href="https://soundcloud-sorter.surge.sh" subtitle="Summer 2017">
-                        <li>Organizes a specific artist's songs by most favorites or playbacks using SoundCloud's JavaScript API to help listeners find
-                            music they're more likely to enjoy because SoundCloud currently does not support this feature</li>
-                        <li>Contains UI/UX updates from a previous version with code refactored from jQuery to React.js</li>
+                    <category-item title="Riddle Solving Game | Initiator" subtitle="Spring 2018">
+                        <li>
+                            Built a riddle solving mobile app (iOS and Android) for a <b>French museum</b>, Museums of Metz. It was made to <b>increase number of yearly visitors</b> by making them more engaged with the knowledge of artifacts <br/>
+                            <b>Tools Used</b> - AngularJS, TypeScript, Ionic
+                        </li>
+                    </category-item>
+                    <category-item-href title="Batman Vs. Joker Game | Initiator" href="https://github.com/akibnizam/Batman-Vs.-Joker-Game-GBA-" subtitle="Fall 2017">
+                        <li>
+                            Built a game for the Nintendo Gameboy where players  play as Batman to catch Joker while dodging boomerangs <br/>
+                            <b>Tools Used</b> - C
+                        </li>
+                        <li>
+                            The game was named "Top 3" best game of Fall 2017 class of CS 2110 (Computer Organization and Programming)
+                        </li>
                     </category-item-href>
-                    <category-item title="Excel | Epic Intentions" subtitle="Spring 2017">
-                        <li>Developed an app for a nonprofit named Excel with programs for students with intellectual disabilities</li>
-                        <li>Supports automated mentor-mentee matching, content management capabilities, and database hosting which
-                        replaced the previous method of using Excel sheets with manual data entry</li>
-                        <li>Constructed database schemas, backend endpoints, and migrations with PostgreSQL, Node.js, and Sequelize ORM
-                        and created UI components using Handlebars, HTML, and Materialize CSS</li>
-                    </category-item>
+                    <category-item-href title="Dynamic Memory Allocator Library | Initiator" href="https://github.com/akibnizam/My-Very-Own-Malloc" subtitle="Fall 2017">
+                        <li>
+                           Built a custom malloc library to do dynamic memory allocation. It had functions similar to malloc, calloc, realloc and free<br/>
+                            <b>Tools Used</b> - C
+                        </li>
+                    </category-item-href>
                 </category>
-                <category name="Leadership">
-                    <category-item title="Intelligent Transportation Systems | Research" subtitle="Team Lead (August 2016 - Present)">
-                        <li>Currently migrating new database information and developing a dashboard for bus managers to determine relevant bus bunching statistics through graphical and tabular visualizations</li>
-                        <li>Led a sub-team by holding regular team meetings, software learning sessions, and client demos</li>
-                    </category-item>
-                    <category-item title="Epic Intentions" subtitle="Project Lead (Spring 2017 - Present)">
-                        <li>An organization aiding non-profits by allowing students to undertake projects on their behalf</li>
-                        <li>Currently leading a seven person team to create data and map visualizations for Atlanta Speech School</li>
-                    </category-item>
-                    <category-item title="Georgia Tech Table Tennis Association" subtitle="Vice President, Webmaster, & Safety Officer (Fall 2015 - Present)">
-                        <li>Recruited players from student orientations, organized weekly club practices, attended budget meetings,
-                            and managed the club website while leading our B Team in regional NCTTA tournaments</li>
-                        <li>Created scripts using Python and Google Sheets API to automate rating input and roster changes</li>
-                    </category-item>
-                </category>
-                <category name="Awards">
+                <!-- <category name="Leadership">
+                </category> -->
+                <category name="Extracurricular Activities">
                     <ul class="category-bullets-indented">
-                        <li>1st Place Overall, CS^2 Hackathon 2016</li>
-                        <li>2nd Place in Best Use of Aladdin API, HackGT 2016</li>
-                        <li>Player of the Year, Georgia Tech Table Tennis Association 2017</li>
+                        <li>Radio Jockey for <b>Wrek Radio</b>, a student led campus radio station</li>
+                        <li>Billiards</li>
+                        <li>Caving</li>
+                        <li>Exploring the Unknown</li>
                     </ul>
                 </category>
                 <br>
